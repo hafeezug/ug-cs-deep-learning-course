@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#121936">
+  <meta name="description" content="Deep Learning course at the University of Gwadar: 16 lecture decks, 16 Google Colab laboratories, an updated outline, and a complete lab manual.">
+  <meta property="og:title" content="Deep Learning — University of Gwadar">
+  <meta property="og:description" content="A 16-week, practice-led course from neural foundations to responsible deployment.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hafeezug.github.io/deep-learning-course/">
+  <title>Deep Learning — University of Gwadar</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.88em%22 font-size=%2282%22>🧠</text></svg>">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to course content</a>
+
+  <header class="masthead">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Department of Computer Science · Batch 2024–2027</p>
+        <h1>Deep Learning</h1>
+        <p class="tagline">A practice-led progression from neural foundations to responsible deployment.</p>
+        <div class="course-facts" aria-label="Course facts">
+          <span>16 weeks</span>
+          <span>2-hour lecture</span>
+          <span>3-hour lab</span>
+          <span>Google Colab + PyTorch</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="#schedule">Explore the course</a>
+          <a class="button ghost" href="docs/Deep_Learning_Outline_Updated.pdf">Download outline</a>
+        </div>
+      </div>
+
+      <div class="learning-map" role="img" aria-label="Course progression from data through neural networks to responsible deployment">
+        <div class="map-label">THE LEARNING PATH</div>
+        <div class="map-flow">
+          <div class="map-node data"><span>01</span>Represent</div>
+          <i aria-hidden="true"></i>
+          <div class="map-node train"><span>02</span>Train</div>
+          <i aria-hidden="true"></i>
+          <div class="map-node reason"><span>03</span>Generate</div>
+          <i aria-hidden="true"></i>
+          <div class="map-node ship"><span>04</span>Deploy</div>
+        </div>
+        <div class="signal-lines" aria-hidden="true"><b></b><b></b><b></b><b></b><b></b></div>
+        <p>MLPs → CNNs → Sequence models → Transformers → Generative models → GNNs</p>
+      </div>
+    </div>
+
+    <nav class="topnav" aria-label="Course navigation">
+      <div class="wrap nav-inner">
+        <a href="#about">About</a>
+        <a href="#outcomes">Outcomes</a>
+        <a href="#logistics">Logistics</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#books">Books</a>
+        <a href="#resources">Resources</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap">
+    <section id="instructor" class="instructor-strip" aria-labelledby="instructor-heading">
+      <div class="avatar" aria-hidden="true">HU</div>
+      <div>
+        <p class="section-kicker">Instructor</p>
+        <h2 id="instructor-heading">Hafeez Ullah</h2>
+        <p>Chairperson &amp; Lecturer, Department of Computer Science, University of Gwadar</p>
+        <div class="inline-links">
+          <a href="mailto:hafeezullah@ug.edu.pk">Email</a>
+          <a href="https://hafeezug.github.io" target="_blank" rel="noopener">Website</a>
+          <a href="https://github.com/hafeezug" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="two-col">
+      <div>
+        <p class="section-kicker">Course information</p>
+        <h2>Build the models. Understand the choices.</h2>
+        <p class="lead">Deep Learning develops the mathematical and computational foundations of modern neural networks and their responsible application.</p>
+        <p>Students implement, train, regularize, evaluate, explain, and deploy PyTorch models for vision, text, time-series, generative, and graph problems. Reproducibility, error analysis, compute constraints, fairness, privacy, safety, and environmental impact are treated as core engineering concerns.</p>
+      </div>
+      <aside class="quick-card" aria-label="Course details">
+        <dl>
+          <div><dt>Credit hours</dt><dd>3 (2 + 1)</dd></div>
+          <div><dt>Teaching pattern</dt><dd>16 lectures + 16 labs</dd></div>
+          <div><dt>Environment</dt><dd>Google Colab · PyTorch</dd></div>
+          <div><dt>Updated</dt><dd>July 2026</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section id="outcomes">
+      <p class="section-kicker">Learning outcomes</p>
+      <h2>What students will be able to do</h2>
+      <div class="outcome-grid">
+        <article class="outcome"><span>CLO 1 · C2</span><h3>Explain</h3><p>Forward and backward computation, optimization, and the principles behind major deep-learning model families.</p></article>
+        <article class="outcome"><span>CLO 2 · C3</span><h3>Implement</h3><p>Train PyTorch models for vision, text, time-series, and graph data using reproducible workflows.</p></article>
+        <article class="outcome"><span>CLO 3 · C4</span><h3>Analyze</h3><p>Use metrics, learning curves, ablations, error analysis, and computational cost to diagnose models.</p></article>
+        <article class="outcome"><span>CLO 4 · C6</span><h3>Design</h3><p>Create an end-to-end pipeline for transfer learning, tuning, deployment, and monitoring.</p></article>
+        <article class="outcome"><span>CLO 5 · C5</span><h3>Evaluate</h3><p>Assess interpretability, fairness, privacy, safety, environmental, and societal implications.</p></article>
+      </div>
+    </section>
+
+    <section id="logistics" class="two-col logistics">
+      <div>
+        <p class="section-kicker">How the course runs</p>
+        <h2>Weekly learning rhythm</h2>
+        <div class="rhythm">
+          <div><b>2h</b><span>Concept lecture with worked examples and visual explanations</span></div>
+          <div><b>3h</b><span>Guided Colab lab with implementation, diagnostics, and reflection</span></div>
+          <div><b>1×</b><span>Notebook, lecture deck, and documented learning evidence each week</span></div>
+        </div>
+      </div>
+      <div>
+        <h3>Prerequisites</h3>
+        <p>Machine Learning or equivalent; Python; basic linear algebra, calculus, probability, and statistics.</p>
+        <h3>Essential documents</h3>
+        <div class="doc-links">
+          <a href="docs/Deep_Learning_Outline_Updated.pdf"><span>PDF</span> Updated course outline</a>
+          <a href="docs/Deep_Learning_Lab_Manual.pdf"><span>PDF</span> 16-lab manual</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule">
+      <div class="section-heading">
+        <div><p class="section-kicker">16-week roadmap</p><h2>Lecture and laboratory schedule</h2></div>
+        <p>Every week includes a downloadable PowerPoint deck and a notebook that opens directly in Google Colab.</p>
+      </div>
+      <div class="table-shell" tabindex="0" aria-label="Scrollable course schedule">
+        <table class="schedule">
+          <thead><tr><th>Week</th><th>Lecture</th><th>Laboratory activity</th><th>Materials</th></tr></thead>
+          <tbody>
+            <tr><td class="week">01</td><td>Deep Learning Workflow &amp; Representation Learning</td><td>Colab, tensors, autograd &amp; reproducibility</td><td class="materials"><a class="pill slides" href="slides/L01_Deep_Learning_Workflow.pptx">Slides</a><a class="pill colab" href="https://colab.research.google.com/github/hafeezug/deep-learning-course/blob/main/notebooks/Lab_01_PyTorch_Tensors_Autograd.ipynb" target="_blank" rel="noopener">Colab</a></td></tr>
+            <tr><td class="week">02</td><td>MLPs, Activations &amp; Losses</td><td>MLPs, output-loss pairings &amp; decision boundaries</td><td class="materials"><a class="pill slides" href="slides/L02_MLPs_Activations_and_Losses.pptx">Slides</a><a class="pill colab" href="https://colab.research.google.com/github/hafeezug/deep-learning-course/blob/main/notebooks/Lab_02_MLP_Activations_Losses.ipynb" target="_blank" rel="noopener">Colab</a></td></tr>
+            <tr><td class="week">03</td><td>Computational Graphs &amp; Backpropagation</td><td>Manual gradients, autograd verification &amp; diagnostics</td><td class="materials"><a class="pill slides" href="slides/L03_Backpropagation.pptx">Slides</a><a class="pill colab" href="https://colab.research.google.com/github/hafeezug/deep-learning-course/blob/main/notebooks/Lab_03_Backprop_Gradient_Diagnostics.ipynb" target="_blank" rel="noopener">Colab</a></td></tr>
+            <tr><td class="week">04</td><td>Optimization, Generalization &amp; Reliable Training</td><td>Optimizer/regularizer ablation &amp; checkpointing</td><td class="materials"><a class="pill slides" href="slides/L04_Reliable_Training.pptx">Slides</a><a class="pill colab" href="https://colab.research.google.com/github/hafeezug/deep-learning-course/blob/main/notebooks/Lab_04_Optimization_Regularization.ipynb" target="_blank" rel="noopener">Colab</a></td></tr>
+            <tr><td class="week">05</td><td>CNN Foundations</td><td>Receptive fields &amp; feature maps</td><td class="materials"><a class="pill slides" href="slides/L05_CNN_Foundations.pptx">Slides</a><a class="pill colab" href="https://colab.research.google.com/github/hafeezug/deep-learning-course/blob/main/notebooks/Lab_05_CNN_Fundamentals_Feature_Maps.ipynb" target="_blank" rel="noopener">Colab</a></td></tr>
+            <tr><td class="week">06</td><td>Modern CNNs, Residual Learning &amp; Transfer</td><td>Residual blocks &amp; source-to-target transfer</td><td class="materials"><a class="pill slides" href="slides/L06_Residual_Learning_and_Transfer.pptx">Slides</a><a class="pill colab" href="https://colab.research.google.com/github/hafeezug/deep-learning-course/blob/main/notebooks/Lab_06_Residual_and_Transfer_Learning.ipynb" target="_blank" rel="noopener">Colab</a></td></tr>
+            <tr><td class="week">07</td><td>Object Detection &amp; Semantic Segmentation</td><td>Synthetic-shape detection &amp; segmentation</td><td class="materials"><a class="pill slides" href="slides/L07_Detection_and_Segmentation.pptx">Slides</a><a class="pill colab" href="https://colab.research.google.com/github/hafeezug/deep-learning-course/blob/main/notebooks/Lab_07_Detection_Segmentation.ipynb" target="_blank" rel="noopener">Colab</a></td></tr>
+            <tr><td class="week">08</td><td>Recurrent Networks &amp; Gated Memory</td><td>RNN/LSTM/GRU forecasting</td><td class="materials"><a class="pill slides" href="slides/L08_RNNs_LSTMs_and_GRUs.pptx">Slides</a><a class="pill colab" href="https://colab.research.google.com/github/hafeezug/deep-learning-course/blob/main/notebooks/Lab_08_RNN_LSTM_GRU.ipynb" target="_blank" rel="noopener">Colab</a></td></tr>
+            <tr class="milestone"><td colspan="4"><span>Midterm checkpoint</span> Foundations complete · modern architectures begin</td></tr>
+            <tr><td class="week">09</td><td>Attention Mechanics &amp; Transformer Blocks</td><td>Scaled attention &amp; a tiny Transformer</td><td class="materials"><a class="pill slides" href="slides/L09_Attention_and_Transformers.pptx">Slides</a><a class="pill colab" href="https://colab.research.google.com/github/hafeezug/deep-learning-course/blob/main/notebooks/Lab_09_Attention_Tiny_Transformer.ipynb" target="_blank" rel="noopener">Colab</a></td></tr>
+            <tr><td class="week">10</td><td>Pretraining &amp; Transformer Model Families</td><td>Toy masked pretraining &amp; classification transfer</td><td class="materials"><a class="pill slides" href="slides/L10_Pretraining_BERT_GPT_and_T5.pptx">Slides</a><a class="pill colab" href="https://colab.research.google.com/github/hafeezug/deep-learning-course/blob/main/notebooks/Lab_10_Transformer_Pretraining_Transfer.ipynb" target="_blank" rel="noopener">Colab</a></td></tr>
+            <tr><td class="week">11</td><td>Autoencoders &amp; Variational Autoencoders</td><td>VAE reconstruction, ELBO &amp; latent-space exploration</td><td class="materials"><a class="pill slides" href="slides/L11_Autoencoders_and_VAEs.pptx">Slides</a><a class="pill colab" href="https://colab.research.google.com/github/hafeezug/deep-learning-course/blob/main/notebooks/Lab_11_VAE_Latent_Spaces.ipynb" target="_blank" rel="noopener">Colab</a></td></tr>
+            <tr><td class="week">12</td><td>Generative Adversarial Networks</td><td>GAN dynamics &amp; mode-collapse diagnosis</td><td class="materials"><a class="pill slides" href="slides/L12_GANs_and_Adversarial_Training.pptx">Slides</a><a class="pill colab" href="https://colab.research.google.com/github/hafeezug/deep-learning-course/blob/main/notebooks/Lab_12_Generative_Adversarial_Networks.ipynb" target="_blank" rel="noopener">Colab</a></td></tr>
+            <tr><td class="week">13</td><td>Diffusion Models &amp; Latent Generation</td><td>Toy forward/reverse diffusion</td><td class="materials"><a class="pill slides" href="slides/L13_Diffusion_Models.pptx">Slides</a><a class="pill colab" href="https://colab.research.google.com/github/hafeezug/deep-learning-course/blob/main/notebooks/Lab_13_Toy_Diffusion.ipynb" target="_blank" rel="noopener">Colab</a></td></tr>
+            <tr><td class="week">14</td><td>Graph Neural Networks &amp; Message Passing</td><td>GCN from first principles</td><td class="materials"><a class="pill slides" href="slides/L14_Graph_Neural_Networks.pptx">Slides</a><a class="pill colab" href="https://colab.research.google.com/github/hafeezug/deep-learning-course/blob/main/notebooks/Lab_14_Graph_Neural_Networks.ipynb" target="_blank" rel="noopener">Colab</a></td></tr>
+            <tr><td class="week">15</td><td>Explainability &amp; Responsible Deep Learning</td><td>Saliency, Grad-CAM, fairness audit &amp; model card</td><td class="materials"><a class="pill slides" href="slides/L15_Explainability_and_Responsible_AI.pptx">Slides</a><a class="pill colab" href="https://colab.research.google.com/github/hafeezug/deep-learning-course/blob/main/notebooks/Lab_15_XAI_Fairness_Model_Card.ipynb" target="_blank" rel="noopener">Colab</a></td></tr>
+            <tr><td class="week">16</td><td>Deployment, Monitoring &amp; Project Defense</td><td>TorchScript, latency, drift &amp; capstone demonstration</td><td class="materials"><a class="pill slides" href="slides/L16_Deployment_and_Project_Defense.pptx">Slides</a><a class="pill colab" href="https://colab.research.google.com/github/hafeezug/deep-learning-course/blob/main/notebooks/Lab_16_Export_Latency_Drift_Capstone.ipynb" target="_blank" rel="noopener">Colab</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="books">
+      <div class="section-heading">
+        <div><p class="section-kicker">Reference material</p><h2>Books used throughout the course</h2></div>
+        <p>References are intentionally limited to books. Weekly slides identify the most relevant chapters.</p>
+      </div>
+      <div class="book-grid">
+        <article class="book"><span>B1 · CORE</span><h3>Understanding Deep Learning</h3><p>Simon J. D. Prince · MIT Press, 2023</p></article>
+        <article class="book"><span>B2 · FOUNDATIONS</span><h3>Deep Learning</h3><p>Ian Goodfellow, Yoshua Bengio &amp; Aaron Courville · MIT Press, 2016</p></article>
+        <article class="book"><span>B3 · PRACTICE</span><h3>Dive into Deep Learning</h3><p>Aston Zhang, Zachary C. Lipton, Mu Li &amp; Alexander J. Smola · Cambridge University Press, 2024</p></article>
+        <article class="book"><span>B4 · THEORY</span><h3>Deep Learning: Foundations and Concepts</h3><p>Christopher M. Bishop &amp; Hugh Bishop · Springer, 2024</p></article>
+        <article class="book"><span>B5 · GENERATIVE</span><h3>Generative Deep Learning</h3><p>David Foster · 2nd ed. · O’Reilly Media, 2023</p></article>
+        <article class="book"><span>B6 · INTERPRETABILITY</span><h3>Interpretable AI</h3><p>Ajay Thampi · Manning, 2022</p></article>
+        <article class="book"><span>B7 · SYSTEMS</span><h3>Designing Machine Learning Systems</h3><p>Chip Huyen · O’Reilly Media, 2022</p></article>
+        <article class="book"><span>B8 · RESPONSIBILITY</span><h3>Fairness and Machine Learning</h3><p>Solon Barocas, Moritz Hardt &amp; Arvind Narayanan · MIT Press, 2023</p></article>
+      </div>
+    </section>
+
+    <section id="resources">
+      <p class="section-kicker">Course files</p>
+      <h2>Everything in one place</h2>
+      <div class="resource-grid">
+        <a class="resource-card" href="docs/Deep_Learning_Outline_Updated.pdf"><span class="resource-icon">01</span><div><h3>Course outline</h3><p>Updated syllabus, CLOs, schedule, assessment plan, and books.</p><b>Download PDF →</b></div></a>
+        <a class="resource-card" href="docs/Deep_Learning_Outline_Updated.docx"><span class="resource-icon">02</span><div><h3>Editable outline</h3><p>The same updated course outline in Microsoft Word format.</p><b>Download DOCX →</b></div></a>
+        <a class="resource-card" href="docs/Deep_Learning_Lab_Manual.pdf"><span class="resource-icon">03</span><div><h3>Lab manual</h3><p>Activities, deliverables, reflection prompts, and rubrics for all 16 labs.</p><b>Download PDF →</b></div></a>
+        <a class="resource-card" href="https://github.com/hafeezug/deep-learning-course" target="_blank" rel="noopener"><span class="resource-icon">04</span><div><h3>Course repository</h3><p>Browse every slide deck, notebook, document, and website source file.</p><b>Open GitHub →</b></div></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div><strong>Deep Learning</strong><span>Department of Computer Science · University of Gwadar</span></div>
+      <p>Course materials prepared for academic use · Updated July 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
